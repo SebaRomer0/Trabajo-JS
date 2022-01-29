@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico 2</title>
+
+    <link rel="stylesheet" href="estilo/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo/estilos.css">
+
+
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <img class="logo" src="./estilo/imagen/logo007-blanco.png" alt="logo de vino">
+                <img src="./estilo/imagen/hamburguesa.svg" alt="" class="hamburguer">
+                <nav class="menu-navegacion align-self-center text-center">
+                    <ul class="nav fs-2 fst-italic flex-column">
+                        <li class="nav-item p-3">
+                            <a class="nav-link color-a" href="#promocion">Promociones</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link color-a" href="#indumentaria-hombre">Indumentaria Hombre</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link color-a" href="#indumentaria-mujer">Indumentaria mujer</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link color-a" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col head text-center position-absolute bottom-0 end-0 py-5">
+                <h1 class="titulo">Bond Indumentaria Tracendente</h1>
+                <p class="parrafo">Compra lo ultimo a la Moda. Para Ellos y Ellas</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="promocion">
+            <h2 class="text-center pt-4">Nuestras Promociones</h2>
+            <div class="d-grid gap-2 col-3 mx-auto">
+                <a id="btnToggle"><button class="btn btn-primary" type="button" onclick="promoTarjeta()">Podes ver Nuestras Promociones al Final</button></a>                
+            </div>
+            <!-- Div que Contiene las Promociones -->
+            <div class="row" id="cont"></div>
+            <div class="container-fluid pro">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./estilo/imagen/tarjetas/promo/auto-icono.png" class="card-img-top" alt="auto-icono">
+                            <div class="card-body">
+                                <p class="card-text">Comprá online ropa por mayor a precio de fabrica en los mejores locales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./estilo/imagen/tarjetas/promo/tarjeta-icono.png" class="card-img-top" alt="tarjeta-icono">
+                            <div class="card-body">
+                                <p class="card-text">Te brindamos un abanico de posibilidades para realizar todas tus compras</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./estilo/imagen/tarjetas/promo/cambio-icono.png" class="card-img-top" alt="icono-icono">
+                            <div class="card-body">
+                                <p class="card-text">Los productos adquiridos a través de nuestra tienda virtual tienen cambio dentro de los 15 días de realizada la compra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="indumentaria-hombre">
+            <div class="container-fluid scroll">
+                <div class="row">
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="estilo/imagen/hombre3.jpg" class="card-img img-fluid" alt="imagen de hombre"
+                                height="600px">
+                            <div class="card-img-overlay letra">
+                                <h5 class="card-title letra-titulo">Indumentaria Remera</h5>
+                                <p class="card-text letra-parrafo">Comprá Ropa Hombre en cuotas sin interés! Conocé nuestras increíbles ofertas y promociones en millones de productos.</p>
+                                <a class="btn btn-primary fs-2" href="pages/indumentaria__Hombre.html" style="text-decoration: none;">Compra</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="indumentaria-mujer">
+            <div class="container-fluid pt-3 scroll">
+                <div class="row">
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="estilo/imagen/mujer.jpg" class="card-img img-fluid" alt="imagen de hombre"
+                                height="600px">
+                            <div class="card-img-overlay letra">
+                                <h5 class="card-title letra-titulo">Indumentaria Remera</h5>
+                                <p class="card-text letra-parrafo">Encontrá Ropa de Mujer de Moda en nuestro shop</p>
+                                <a class="btn btn-primary fs-2" href="pages/indumentaria__Mujer.html" style="text-decoration: none;">Compra</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid pt-3">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <form class="row g-3 formulario">
+                            <img class="img-fluid" src="estilo/imagen/img2-formulario.jpg" alt="Imagen para formulario">
+                            <h2 id="contacto" class="text-center pt-4 fs-1">Registrate</h2>
+                            <div class="col-md-6">
+                                <label for="validationDefault01" class="form-label letraNegrita">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefault02" class="form-label letraNegrita">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label letraFormulario">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                    <input type="text" class="form-control" id="email"
+                                        aria-describedby="inputGroupPrepend2" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefault03" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefault03" class="form-label ">Usuario</label>
+                                <input type="text" class="form-control" id="usuario" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefault03" class="form-label ">Contraseña</label>
+                                <input type="password" class="form-control" id="contraseña" required>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary fs-3" type="submit"
+                                    onclick="nuevoUsuario()">Registro</button>
+                                <button class="btn btn-danger fs-3" type="reset">Limpiar formulario</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="img-fluid" src="estilo/imagen/logo007.png" alt="">
+                </div>
+                <div class="col">
+                    <h2>Contactanos</h2>
+                    <p class="fs-4">341-4566098/ whatsapp (+54 9 3412-698977)</p>
+                    <h2 class="pt-3">Formas de Envio</h2>
+                    <p class="fs-4">bond_007@outlook.com</p>
+                    <h2 class="pt-3">Redes Sociales</h2>
+                        <img class="medios-social" src="./estilo/imagen/logos/bxl-facebook-circle.svg" alt="">
+                        <img class="medios-social" src="./estilo/imagen/logos/bxl-tiktok.svg" alt="">
+                        <img class="medios-social" src="./estilo/imagen/logos/bxl-twitter.svg" alt="">
+                        <img class="medios-social" src="./estilo/imagen/logos/bxl-whatsapp.svg" alt="">
+                    <h2 class="pt-4" >Medios de Pago</h2>
+                    <div class="img-fluid">
+                        <img class="medios-pago" src="./estilo/imagen/tarjetas/tarjetas/banelco@2x.png" alt="">
+                        <img class="medios-pago" src="./estilo/imagen/tarjetas/tarjetas/mastercard@2x.png" alt="">
+                        <img class="medios-pago" src="./estilo/imagen/tarjetas/tarjetas/pagofacil@2x.png" alt="">
+                        <img class="medios-pago" src="./estilo/imagen/tarjetas/tarjetas/rapipago@2x.png" alt="">
+                        <img class="medios-pago" src="./estilo/imagen/tarjetas/tarjetas/tarjeta-naranja@2x.png" alt="">
+                        <img class="medios-pago" src="./estilo/imagen/tarjetas/tarjetas/visa@2x.png" alt="">
+                    </div>
+                    <h2 class="pt-4">Formas de Envio</h2>
+                        <img src="./estilo/imagen/tarjetas/tarjetas/oca@2x.png" alt="">
+                        <img src="./estilo/imagen/tarjetas/tarjetas/mercado-envios@2x.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="redesSocial__fixed ">
+            <a href="https://api.whatsapp.com/send?phone=5493412698977"><img class="btn__whatsapp whatsapp" src="estilo/imagen/logos/whatsapp.png" alt="Whatsapp"></a>
+            
+        </div>
+
+    </footer>
+
+
+    <script src="estilo/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="estilo/header.js"></script>
+    <script src="estilo/promocion.js"></script>
+</body>
+
+</html>
